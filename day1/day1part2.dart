@@ -1,7 +1,6 @@
 import 'dart:io';
 
 void main() {
-  func();
   readFile();
   for (var l in readFile()) {
     List<String> singleline = l.split(' ');
@@ -16,7 +15,21 @@ void main() {
           print('1');
         } else if (element[j] == 't' && j+2 < element.length && element[j+1] == 'w' && element[j+2] == 'o') {
           print('2');
-        } 
+        } else if (element[j] == 't' && j+4 < element.length && element[j+1] == 'h' && element[j+2] == 'r' && element[j+3] == 'e' && element[j+4] == 'e') {
+          print('3');
+        } else if (element[j] == 'f' && j+3 < element.length && element[j+1] == 'o' && element[j+2] == 'u' && element[j+3] == 'r') {
+          print('4');
+        } else if (element[j] == 'f' && j+3 < element.length && element[j+1] == 'i' && element[j+2] == 'v' && element[j+3] == 'e') {
+          print('5');
+        } else if (element[j] == 's' && j+2 < element.length && element[j+1] == 'i' && element[j+2] == 'x') {
+          print('6');
+        } else if (element[j] == 's' && j+4 < element.length && element[j+1] == 'e' && element[j+2] == 'v' && element[j+3] == 'e' && element[j+4] == 'n') {
+          print('7');
+        } else if (element[j] == 'e' && j+4 < element.length && element[j+1] == 'i' && element[j+2] == 'g' && element[j+3] == 'h' && element[j+4] == 't') {
+          print('8');
+        } else if (element[j] == 'n' && j+3 < element.length && element[j+1] == 'i' && element[j+2] == 'n' && element[j+3] == 'e') {
+          print('9');
+        }
       }
     }
   }
